@@ -1,0 +1,56 @@
+$path-to-font: "../fonts/pragmatica";
+$name-font: "pragmatica";
+
+@font-face{
+  font-family: $name-font;
+  src: url($path-to-font + '/pragmatica-extralight-v3.eot');
+  src: url($path-to-font + '/pragmatica-extralight-v3.eot?#iefix') format('embedded-opentype'),
+  url($path-to-font + '/pragmatica-extralight-v3.woff') format('woff'),
+  url($path-to-font + '/pragmatica-extralight-v3.ttf') format('truetype');
+  font-weight:100;
+  font-style:normal
+}
+
+@font-face{
+  font-family: $name-font;
+  src: url($path-to-font + '/pragmatica-light-v3.eot');
+  src: url($path-to-font + '/pragmatica-light-v3.eot?#iefix') format('embedded-opentype'),
+  url($path-to-font + '/pragmatica-light-v3.woff') format('woff'),
+  url($path-to-font + '/pragmatica-light-v3.ttf') format('truetype');
+  font-weight:300;
+  font-style:normal
+}
+
+@font-face{
+  font-family: $name-font;
+  src: url($path-to-font + '/pragmatica-regular-v3.eot');
+  src: url($path-to-font + '/pragmatica-regular-v3.eot?#iefix') format('embedded-opentype'),
+  url($path-to-font + '/pragmatica-regular-v3.woff') format('woff'),
+  url($path-to-font + '/pragmatica-regular-v3.ttf') format('truetype');
+  font-weight:400;
+  font-style:normal
+}
+
+@font-face{
+  font-family: $name-font;
+  src: url($path-to-font + '/pragmatica-medium-v3.eot');
+  src: url($path-to-font + '/pragmatica-medium-v3.eot?#iefix') format('embedded-opentype'),
+  url($path-to-font + '/pragmatica-medium-v3.woff') format('woff'),
+  url($path-to-font + '/pragmatica-medium-v3.ttf') format('truetype');
+  font-weight:600;
+  font-style:normal
+}
+
+$path-to-font-title: "../fonts/pfhighwaysanspro";
+$name-font-title: "PFHighwaySansPro";
+
+@font-face{
+  font-family: $name-font-title;
+  src: url($path-to-font-title + '/pfhighway-thin-v2.eot');
+  src: url($path-to-font-title + '/pfhighway-thin-v2.eot?#iefix') format('embedded-opentype'),
+  url($path-to-font-title + '/pfhighway-thin-v2.woff') format('woff'),
+  url($path-to-font-title + '/pfhighway-thin-v2.ttf') format('truetype');
+  font-weight:100;
+  font-style:normal
+}
+

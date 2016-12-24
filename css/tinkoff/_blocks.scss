@@ -1,0 +1,616 @@
+.tinkoff-brand {
+	box-sizing: border-box;
+	height: 100px;
+	padding: 10px 0;
+
+	.logo-holder {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.tinkoff-banner {
+	height: 475px;
+	padding: 87px 0 125px 0;
+	box-sizing: border-box;
+	background: #ffffff url("../img/banner.jpg") no-repeat 50% 50%;
+	background-size: cover;
+
+	.label {
+		font: 300 17px/54px PFHighwaySansPro, Arial, sans-serif;
+		color: $white;
+		background: $tinkoffBlue;
+		padding: 5px 10px;
+	}
+
+	.tinkoff-banner-title {
+		padding-top: 20px;
+		font: 300 50px/54px PFHighwaySansPro, Arial, sans-serif;
+		color: $white;
+	}
+
+	.tinkoff-banner-descr {
+		font-size: 19px;
+		line-height: 23px;
+		color: $white;
+		padding: 5px 0 60px 0;
+	}
+
+	.tinkoff-banner-buttons {
+		.btn {
+			&:first-child {
+				margin-right: 30px;
+			}
+		}
+	}
+
+
+
+	@media (max-width: $screen-xs-max) {
+		height: auto;
+		padding: 50px 0;
+		text-align: center;
+		background-position: 60% 50%;
+		background-size: cover;
+
+		.tinkoff-banner-title {
+			padding: 0;
+			font-size: 40px;
+			line-height: 46px;
+		}
+
+		.tinkoff-banner-descr {
+			color: #ffffff;
+			padding-bottom: 30px;
+		}
+
+		.tinkoff-banner-buttons {
+			text-align: center;
+			.btn {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+
+				&:first-child {
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 20px;
+				}
+
+			}
+		}
+
+	}
+}
+
+.registration-choose-type {
+
+	padding: 110px 0 120px 0;
+	text-align: center;
+
+	.buttons {
+		.btn {
+			&:first-child {
+				margin-right: 15px;
+			}
+
+			&:last-child {
+				margin-left: 15px;
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		padding: 50px 0;
+		text-align: center;
+
+		.buttons {
+			.btn {
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 20px;
+
+				&:first-child {
+					margin-right: auto;
+				}
+
+				&:last-child {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+}
+
+.tinkoff-adaptive-service {
+	height: 620px;
+	padding: 140px 0 170px 0;
+	box-sizing: border-box;
+	background: #f6f7f9 url("../img/block_adaptive_bg.png") no-repeat 50% 50%;
+	background-size: cover;
+
+	.title {
+		line-height: 52px;
+		padding-bottom: 20px !important;
+	}
+
+	.download-app {
+		display: inline-block;
+		padding: 0 12px;
+		box-sizing: unset;
+		outline: none;
+
+		$tinkoff-download-app-img-color: #658eb5;
+
+		svg {
+			width: 82px;
+			height: 80px;
+
+			.cls-1 {
+				fill: none;
+				stroke: $tinkoff-download-app-img-color;
+				stroke-miterlimit: 10;
+				stroke-width: 1.5px;
+			}
+
+			.cls-2 {
+				fill: $tinkoff-download-app-img-color;
+			}
+		}
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		.title {
+			width: 500px;
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		background: #f6f7f9 url("../img/block_adaptive_bg1.png") no-repeat -30% 100%;
+		background-size: 600px auto;
+		padding: 50px 0 400px;
+		text-align: center;
+		height: auto;
+
+		.description {
+			text-align: left;
+		}
+
+		.buttons {
+			text-align: left;
+			.download-app {
+				svg {
+					width: 52px;
+					height: 50px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 480px) and (max-width: $screen-xs-max) {
+		background-position: 250px 100%;
+	}
+}
+
+.tinkoff-has-account {
+	padding: 115px 0 55px 0;
+	background: #f6f7f9 url("../img/has_account_bg.png") no-repeat 50% 100%;
+
+	.title {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	&-content {
+		color: #000;
+		font-size: 23px;
+		line-height: 56px;
+		text-align: center;
+	}
+
+	.buttons {
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		padding: 50px 0;
+
+		.tinkoff-has-account-content {
+			line-height: 40px;
+		}
+	}
+}
+
+.tinkoff-account-advantage {
+	padding: 105px 0 83px 0;
+
+	.title {
+		text-align: center;
+		padding-bottom: 90px;
+	}
+
+	.tinkoff-account-advantage-block {
+		height: 280px;
+
+		@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+			height: 250px;
+		}
+
+		&-icon {
+			svg {
+				height: 80px;
+				width: 82px;
+			}
+
+			$tinkoff-account-advantage-block-img-color: #80868f;
+
+			&.present, &.internet-bank, &.phone-app, &.speed {
+				.cls-1 {
+					fill: $tinkoff-account-advantage-block-img-color;
+				}
+
+				.cls-2 {
+					fill: none;
+					stroke: $tinkoff-account-advantage-block-img-color;
+					stroke-linecap: round;
+					stroke-linejoin: round;
+					stroke-width: 1.5px;
+				}
+			}
+
+			&.discount {
+				.cls-1, .cls-2 {
+					fill: $tinkoff-account-advantage-block-img-color;
+				}
+
+				.cls-2 {
+					font-size: 34px;
+					font-family: PFHighwaySansPro, Arial, sans-serif;
+				}
+			}
+
+			&.online {
+				.cls-1 {
+					fill: $tinkoff-account-advantage-block-img-color;
+				}
+
+				.cls-2, .cls-3 {
+					fill: none;
+					stroke: $tinkoff-account-advantage-block-img-color;
+					stroke-width: 1.5px;
+				}
+
+				.cls-2 {
+					stroke-linecap: round;
+					stroke-linejoin: round;
+				}
+
+				.cls-3 {
+					stroke-miterlimit: 10;
+					fill-rule: evenodd;
+				}
+			}
+
+			&.fast {
+				.cls-1 {
+					fill: none;
+					stroke: $tinkoff-account-advantage-block-img-color;
+					stroke-linecap: round;
+					stroke-linejoin: round;
+					stroke-width: 1.5px;
+				}
+
+				.cls-2 {
+					fill: $tinkoff-account-advantage-block-img-color;
+				}
+			}
+
+		}
+
+		&-title {
+			font-size: 23px;
+			line-height: 30px;
+			color: $black;
+			padding: 15px 0 10px 0;
+			font-weight: 400;
+		}
+		&-descr {
+			font-size: 17px;
+			line-height: 21px;
+			color: $tinkoffGray;
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		padding: 50px 0;
+		text-align: center;
+
+		.tinkoff-account-advantage-block {
+			height: auto;
+			padding-bottom: 50px;
+
+			&.last-child {
+				padding-bottom: 0;
+			}
+
+			&-title {
+				padding: 0 0 5px 0;
+				text-align: left;
+			}
+
+			&-descr {
+				text-align: left;
+			}
+
+		}
+	}
+}
+
+.tinkoff-todo-list {
+	padding: 105px 0 50px 0;
+
+	.title {
+		text-align: center;
+		padding-bottom: 70px;
+	}
+
+	.tinkoff-todo-list-element {
+		padding-bottom: 50px;
+
+		.tinkoff-todo-list-icon {
+			svg {
+				width: 122px;
+				height: 122px;
+
+				.cls-1 {
+					fill: $tinkoffYellow;
+				}
+
+				.cls-2 {
+					fill: none;
+					stroke: $tinkoffDark;
+					stroke-linecap: round;
+					stroke-linejoin: round;
+					stroke-width: 1.5px;
+				}
+			}
+
+			&.docs {
+				svg {
+					.cls-2, .cls-3 {
+						fill: none;
+						stroke: $tinkoffDark;
+						stroke-miterlimit: 10;
+						stroke-width: 1.5px;
+					}
+
+					.cls-3 {
+						stroke-linecap: round;
+					}
+				}
+			}
+		}
+	}
+
+	.tinkoff-todo-list-title {
+		font-size: 23px;
+		line-height: 56px;
+		color: $black;
+	}
+
+	.tinkoff-todo-list-descr {
+		font-size: 17px;
+		line-height: 21px;
+		color: #9299a2;
+	}
+
+
+	@media (max-width: $screen-xs-max) {
+		padding: 50px 0;
+		text-align: center;
+
+		.tinkoff-todo-list-element {
+			padding-bottom: 50px;
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+
+		.tinkoff-todo-list-title {
+			font-size: 23px;
+			line-height: 28px;
+			padding-bottom: 10px;
+		}
+
+	}
+}
+
+.tinkoff-service {
+	padding: 105px 0 70px 0;
+	.title {
+		text-align: center;
+		padding-bottom: 70px;
+	}
+	&-block {
+		height: 300px;
+		text-align: center;
+		.icon {
+			.cls-2 {
+				fill: $tinkoffYellow;
+			}
+			.cls-1 {
+				fill: none;
+				stroke: $tinkoffDark;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke-width: 1.5px;
+			}
+			svg {
+				height: 120px;
+				width: 120px;
+			}
+		}
+
+		&-title {
+			font-size: 23px;
+			line-height: 26px;
+			color: $black;
+			padding: 20px 0 5px 0;
+		}
+
+		&-descr {
+			font-size: 14px;
+			line-height: 20px;
+			color: #828b96;
+			padding: 0 15px;
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		text-align: center;
+		padding: 50px 0;
+
+		&-block {
+			height: auto;
+			padding-bottom: 50px;
+
+			&.last-child {
+				padding-bottom: 0;
+			}
+		}
+
+	}
+}
+
+.tinkoff-docs {
+	padding: 105px 0 80px 0;
+	.title {
+		text-align: center;
+		padding-bottom: 70px;
+	}
+
+	.tinkoff-docs-group-wrapper {
+		display: table;
+		width: 100%;
+
+		.tinkoff-docs-group {
+			display: table-cell;
+			padding: 40px 50px;
+			vertical-align: top;
+			width: 50%;
+			border: 1px solid $tinkoffBlueXLight;
+
+			&:first-child {
+				border-right: none;
+			}
+
+			.tinkoff-docs-title {
+				text-align: center;
+				font-size: 23px;
+				color: $text-color;
+				padding-bottom: 38px;
+			}
+
+			.tinkoff-docs-element {
+				padding-bottom: 20px;
+				&:last-child {
+					padding-bottom: 0;
+				}
+				a {
+					font-size: 17px;
+					line-height: 24px;
+					display: table;
+					width: 100%;
+					&:hover {
+						text-decoration: none;
+
+						span {
+							text-decoration: underline;
+						}
+					}
+					img, span {
+						display: table-cell;
+					}
+
+					span {
+						padding-left: 0;
+						width: 90%;
+					}
+					@media (max-width: $screen-sm-max) {
+						span {
+							width: 85%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tinkoff-docs-account-info {
+		text-align: center;
+		padding: 25px 0;
+		border: 1px solid $tinkoffBlueXLight;
+		border-top: none;
+		> div {
+			img, span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			span {
+				padding-left: 10px;
+				font-size: 23px;
+				line-height: 56px;
+				color: $black;
+			}
+		}
+	}
+
+	.description {
+		text-align: center;
+		font-size: 17px;
+		line-height: 56px;
+		padding-top: 6px;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		padding: 50px 0;
+		.tinkoff-docs-group-wrapper {
+			.tinkoff-docs-group {
+				padding: 20px 30px;
+				display: block;
+				width: auto;
+
+				&:first-child {
+					border: 1px solid $tinkoffBlueXLight;
+					border-bottom: none;
+				}
+
+				.tinkoff-docs-title {
+					padding-bottom: 20px;
+				}
+			}
+		}
+
+		.tinkoff-docs-account-info {
+			padding-left: 20px;
+			padding-right: 20px;
+
+			> div {
+				span {
+					font-size: 18px;
+					line-height: 24px;
+					width: 150px;
+				}
+			}
+		}
+
+		.description {
+			font-size: 17px;
+			line-height: 22px;
+			padding-top: 20px;
+		}
+
+	}
+
+}

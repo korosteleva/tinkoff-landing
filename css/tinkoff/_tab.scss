@@ -1,0 +1,106 @@
+.choose-document-type-wrapper {
+
+  text-align: center;
+  padding-bottom: 20px;
+
+  .nav {
+	&.choose-document-type {
+	  list-style: outside none none;
+	  margin-bottom: 0;
+	  padding-left: 0;
+	  display: inline-block;
+	  border: 0 none;
+
+	  li {
+		&.active {
+		  > a {
+			background-color: $tinkoffLinkColor;
+			color: $white;
+			border: 1px solid $tinkoffLinkColor;
+
+			&:hover, &:active, &:focus {
+			  border: 1px solid $tinkoffLinkColor;
+			  background: $tinkoffLinkColor;
+			}
+		  }
+
+		  &:first-child {
+			> a {
+			  border-right: none;
+			  &:hover, &:active, &:focus {
+				border-right: none;
+			  }
+			}
+		  }
+		  &:hover, &:active, &:focus {
+			a {
+			  border: 1px solid $tinkoffLinkColor;
+			  background: $tinkoffLinkColor;
+			}
+		  }
+		}
+
+		&:hover, &:active, &:focus {
+		  a {
+			border: 1px solid $tinkoffLinkColor;
+			background: transparent;
+		  }
+		}
+
+		a {
+		  outline: none;
+		  color: $tinkoffLinkColor;
+		  margin: 0;
+		  padding: 4px 17px 3px;
+		  border: 1px solid $tinkoffLinkColor;
+		}
+
+		&:first-child {
+		  border-radius: 30px 0 0 30px;
+		  a {
+			border-radius: 30px 0 0 30px;
+			border-right: none;
+		  }
+		}
+		&:last-child {
+		  border-radius: 0 30px 30px 0;
+		  a {
+			border-radius: 0 30px 30px 0;
+		  }
+		}
+	  }
+
+	  @media (max-width: $screen-md-max) {
+		li {
+		  float: none;
+		  text-align: center;
+
+		  &.active {
+			&:first-child {
+			  > a {
+				border-right: 1px solid $tinkoffLinkColor;
+				&:hover, &:active, &:focus {
+				  border-right: 1px solid $tinkoffLinkColor;
+				}
+			  }
+			}
+		  }
+		  &:first-child {
+			border-radius: 30px;
+			padding-bottom: 15px;
+			a {
+			  border-radius: 30px;
+			  border-right: 1px solid $tinkoffLinkColor;
+			}
+		  }
+		  &:last-child {
+			border-radius: 30px;
+			a {
+			  border-radius: 30px;
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
